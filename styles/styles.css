@@ -1,0 +1,196 @@
+/* Global Layout Set-up */
+
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: #222;
+    background: #fff;
+    max-width: 90%;
+}
+main {
+    margin: 5%;
+}
+img {
+    max-width: 100%;
+}
+/* Link Styles */
+
+a {
+    text-decoration: none;
+    color: black;
+}
+a:hover {
+    color: #6633ff;
+}
+/* Section Styles */
+
+.main-header {
+    padding-top: .5em;
+    padding-bottom: .5em;
+    min-height: 30px;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 80px;
+    margin-left: 10px;
+}
+.nav li {
+    display: block;
+    padding: 10px 5px;
+    margin-bottom: 4px;
+    background-color: white;
+    text-transform: uppercase;
+    font-size: 1.2em;
+}
+.nav {
+    font-weight: 700;
+    list-style-type: none;
+    padding-left: 0;
+}
+.nav .name {
+    display: block;
+    margin-right: auto;
+    color: black;
+    text-transform: uppercase;
+}
+.profile-image {
+    margin-top: 20px;
+    max-width: 60%;
+}
+.bio {
+    font-size: 1.5em;
+    text-align: left;
+}
+.portfolio-samples p {
+    font-size: 1.5em;
+    padding-bottom: 30px;
+}
+#port {
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+.title {
+    font-size: 1.8em;
+}
+#contact {
+    font-size: 1.4em;
+}
+#contact h2 {
+    text-transform: uppercase;
+    font-size: 1.3em;
+}
+#contact ul {
+    padding: 0;
+}
+#contact li {
+    list-style-type: none;
+    padding: 5px 10px;
+}
+#contact span {
+    padding-left: 15px;
+}
+footer {
+    width: 100%;
+    min-height: 30px;
+    text-align: center;
+    padding: 20px 20px 40px 20px;
+    border-top: 1px solid rgba(195, 202, 206, 0.5);
+}
+footer ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+footer li {
+    display: inline-block;
+}
+footer li:first-child {
+    float: left;
+}
+footer li:nth-child(2) {
+    float: right;
+    text-transform: uppercase;
+}
+.clearfix {
+    clear: both;
+}
+/* Styles for larger screens */
+
+@media screen and (min-width: 768px) {
+    header {
+        min-height: 470px;
+    }
+    header .profile-image {
+        float: right;
+        margin-right: 100px;
+    }
+    .bio {
+        padding-top: 10px;
+    }
+    .portfolio-samples {
+        max-width: 42%;
+        display: inline-block;
+        padding: 0 2px 0 2px;
+        margin-bottom: 20px;
+    }
+    .marketing .travel .gallery {
+        float: left;
+    }
+    .search .maps .calculator {
+        float: right;
+    }
+    .nav {
+        max-width: 1200px;
+        padding: 0 30px;
+    }
+    .nav li {
+        display: inline;
+        padding: 5px 10px 10px 10px;
+        margin-bottom: 40px;
+    }
+    main {
+        margin-top: 200px;
+        padding-top: 20px;
+    }
+    main p {
+        line-height: 1.6em;
+    }
+    footer {
+        font-size: 1.3em;
+        max-width: 1200px;
+        margin: 40px auto;
+    }
+}
+@media screen and (min-width: 1024px) {
+    .name {
+        display: inline-block;
+        position: absolute;
+        left: 50px;
+        top: 0px;
+        margin-left: 10px;
+    }
+    .nav {
+        text-align: right;
+        padding: 0 30px;
+    }
+    .nav li {
+        display: inline;
+        padding: 5px 10px 10px 10px;
+        margin-bottom: 40px;
+    }
+    .portfolio-samples {
+        max-width: 33%;
+        display: inline-block;
+        padding: 0 2px 0 2px;
+        margin-bottom: 20px;
+    }
+    .portfolio-samples p {
+        margin: 0;
+        padding: 0;
+    }
+}
